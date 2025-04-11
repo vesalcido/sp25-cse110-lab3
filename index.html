@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> First Meeting Notes Document </title>
+  </head>
+  <body>
+    <main> 
+        <header>
+          <nav> 
+            <a href="/meetingnotes/">Meeting Notes</a> |
+            <a href="/teambonding/">Team Bonding</a> |
+            <a href="/logistics/">Logistics</a> |
+            <a href="/project/">Project</a> 
+          </nav>
+            <h1> First Meeting with 11x Devs Notes Doc</h1>
+            <h2> Meeting for some brainstorming and check-ins</h2>
+            <h3> Date: Tuesday April 15th </h3>
+            <h3>Attendance List:</h3>
+            <ul>
+              <li>Verania</li>
+              <li>Charles</li>
+              <li>Alan</li>
+              <li>Aryan</li>
+              <li>Ben</li>
+              <li>Khang</li>
+              <li>Lucas</li>
+              <li>Mia</li>
+              <li>Prasham</li>
+              <li>Sachin</li>
+              <li>Wyatt</li>
+            </ul>
+        </header>
+        <hr />
+        <section>
+           <h2> Brainstorming</h2>
+           <p> These are the notes where we will be able to <b>brainstorm</b> some of our ideas.<br /> We also will include any other ideas that come to mind and write them here. </p> 
+        </section>
+        <section>
+            <h2> Check-Ins</h2>
+            <p> These are the notes for check-ins of our group.<br /> It will most likely consist of informal <strong>fun stuff, feelings, and improvements</strong> from our fellow team members.</p>
+        </section>
+        <section>
+          <h2> Unfinished Business</h2>
+          <ol>
+            <li> Talking about what our team logo needs to be</li>
+            <li> Need to know what our official team name needs to be</li>
+            <li> Lastly, need to know what our <i>team bonding</i> activity will be </li>
+          </ol>
+        </section>
+        <section>
+          <h2> New Business</h2>
+          <p> These will be the notes that we want to discuss on new business for our project and what to <em>directly express</em> to get started/mention. </p>
+        </section>
+        <div class = "questions">
+          <h2> Questions/Comments/Concerns</h2>
+          <p> This is the area where if any of our teammates have any <span class="blue">questions</span> of what we discussed is unclear, we may put a clear answer for all. </p>
+          <audio controls>
+            <source src="room-full-of-people-talking-223318.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <section> 
+          <h2> Diagrams/Architecture/Things Presented</h2>
+          <p> This area will have notes about any diagrams or things presented at our meetings from our fellow teammates.</p>
+          <img src="chart.jpg" alt="Software Engineering Diagram showing different aspects of the job" width="400" height="400">
+          <video width="320" height="240" controls>
+            <source src="7989532-hd_1920_1080_25fps.mp4" type="video/mp4">
+          </video>
+          <details>
+            <summary>Meeting Summary</summary>
+            <p> The team has not officially come to the conclusion of what our official team name and logo is but we've decided <br /> that when we do our team bonding assignment (this weekend) we will be voting on our top picks!</p>
+          </details>
+        </section>
+    </main>
+    <form action="https://httpbin.org/post" method="POST">
+      <fieldset>
+        <legend>Voting Form:</legend>
+        <input type="checkbox" id="logo1" name="logo1" value="Animal">
+        <label for="logo1"> I want an animal as a team logo</label><br>
+        <input type="checkbox" id="logo2" name="logo2" value="Cartoon">
+        <label for="logo2"> I want a cartoon as a team logo</label><br>
+        <input type="checkbox" id="logo3" name="logo3" value="Meme">
+        <label for="logo3"> I want a meme as a team logo</label><br>
+
+        <div>
+          <input type="radio" id="voted status" name="voted status" value="Yes I have chosen one" />
+          <label for="huey">Click here for Yes, I have chosen a team logo!</label>
+        </div>
+        
+        <label for="name">Name on the ballot (4 to 8 characters):</label>
+        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" /> <br />
+
+        <label for="start">Voted on date:</label>
+        <input type="date" id="start" name="voted-on" value="2025-04-15" min="2025-04-11"max="2025-04-15" /> <br />
+
+        <label for="Comments/Concerns">Comments/Concerns on voting criteria?:</label> <br />
+        <textarea id="Comments/Concerns" name="Comments/Concerns" rows="4" cols="50">
+          Any other ideas for logos and team names please right therm down here!
+        </textarea>
+        <br />
+        <label for="teamname">Choose a team name:</label>
+        <input list="team-name-options" id="team-name" name="team-name-options" />
+        <datalist id="team-name-options">
+          <option value="11x Developers"></option>
+          <option value="Powell Puff Girls"></option>
+          <option value="The Wolf Pack"></option>
+          <option value="Team Kitty Kat"></option>
+          <option value="Litness"></option>
+        </datalist>
+        <br />
+
+        <label for="options-above">Are you satisfied with the options for team name above?</label>
+        <select name="yes-no" id="options-above">
+        <option value="">--Please choose an option--</option>
+        <option value="yes">Yes</option>
+        <option value="No">No</option>
+        <br />
+
+        <button class="Submit Vote" type="button">Submit Vote</button>
+
+
+      </fieldset>
+    </form>
+  </body>
+</html>
