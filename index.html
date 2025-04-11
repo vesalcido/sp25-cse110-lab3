@@ -84,22 +84,22 @@
         <label for="logo3"> I want a meme as a team logo</label><br>
 
         <div>
-          <input type="radio" id="voted status" name="voted status" value="Yes I have chosen one" />
-          <label for="huey">Click here for Yes, I have chosen a team logo!</label>
+          <input type="radio" id="voted-status" name="voted-status" value="Yes I have chosen one" />
+          <label for="voted-status">Click here for Yes, I have chosen a team logo!</label>
         </div>
         
         <label for="name">Name on the ballot (4 to 8 characters):</label>
         <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" /> <br />
 
         <label for="start">Voted on date:</label>
-        <input type="date" id="start" name="voted-on" value="2025-04-15" min="2025-04-11"max="2025-04-15" /> <br />
+        <input type="date" id="start" name="voted-on" value="2025-04-15" min="2025-04-11" max="2025-04-15" /> <br />
 
         <label for="Comments/Concerns">Comments/Concerns on voting criteria?:</label> <br />
         <textarea id="Comments/Concerns" name="Comments/Concerns" rows="4" cols="50">
           Any other ideas for logos and team names please right therm down here!
         </textarea>
         <br />
-        <label for="teamname">Choose a team name:</label>
+        <label for="team-name">Choose a team name:</label>
         <input list="team-name-options" id="team-name" name="team-name-options" />
         <datalist id="team-name-options">
           <option value="11x Developers"></option>
@@ -107,19 +107,15 @@
           <option value="The Wolf Pack"></option>
           <option value="Team Kitty Kat"></option>
           <option value="Litness"></option>
-        </datalist>
-        <br />
+        </datalist> <br />
 
         <label for="options-above">Are you satisfied with the options for team name above?</label>
         <select name="yes-no" id="options-above">
         <option value="">--Please choose an option--</option>
         <option value="yes">Yes</option>
-        <option value="No">No</option>
-        <br />
+        <option value="No">No</option> <br /> 
 
-        <button class="Submit Vote" type="button">Submit Vote</button>
-
-
+        <button name="submit"> Submit Vote </button>
       </fieldset>
     </form>
   </body>
