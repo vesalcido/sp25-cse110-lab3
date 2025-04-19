@@ -1,0 +1,93 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+    margin: 0;
+    padding: 1rem;
+}
+/* Navigation Bar styling */
+nav a {
+    text-decoration: none;
+    color: rgb(24, 67, 104); 
+    margin-right: 12px;
+}
+/* Naviagtion Bar text changing color to pink onced hovered over */
+nav a:hover {
+    color: color-mix(in srgb, rgb(240, 134, 197) 70%, red 30%);
+}
+
+header h1 {
+    color: #008B8B;
+}
+header h2 {
+    color: rgb(120, 160, 221);
+}
+header h3 {
+    color: color(display-p3 0.7 0.2 0.5);
+}
+
+/* Attendance List */
+header ul {
+    background-color: rgba(240, 255, 255, 0.4);
+    padding-left: 4rem;
+    padding: 1.5rem;
+    border-left: 4px solid #008B8B;
+    border-radius: 8px;
+}
+/* The Brainstorming and Check-Ins Section being highlighted in gray */
+section:nth-of-type(1) p,
+section:nth-of-type(2) p {
+  background-color: #f9f9f9; 
+  padding: 1rem;
+  border-radius: 8px;
+}
+/* Unfinished Business Ordered List Section highlighted in red */
+section:nth-of-type(3) ol {
+    background-color: hsla(0, 100%, 80%, 0.3); 
+    padding: 1rem;
+    padding-left: 2rem;
+    border-left: 2px dotted #333;
+    border-radius: 8px;
+}
+/* Questions/Comments/Concerns Section */
+.questions {
+    background-color: rgba(70, 205, 155, 0.2);
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* Colors the word question in blue in the Questions/Comments/Concerns Section */
+.questions .blue {
+    color: rgb(5, 118, 183);
+}
+/* Diagrams/Architecture/Things Presented Section */
+/* Makes software engineering diagram a certain size */
+section:nth-of-type(5) img {
+    width: 25rem;      
+    height: 300px;     
+    margin-bottom: 2vh;
+}
+/* Makes video a certain size */
+section:nth-of-type(5) video {
+    width: 20em;       
+    height: 200pt;     
+}
+/* Overall Layout */
+main {
+    padding: 0.5in;
+}
+/* CSS Variable with a Fallback */
+/* made everything with a strong tag green */
+strong {
+    color: var(--main-accent, green);
+}
+/* CSS Variable Defintion */
+:root {
+    --main-accent: color(display-p3 0.2 0.7 0.7);
+}
+
+
+
+
+  
