@@ -16,9 +16,19 @@ nav a {
 nav a:hover {
     color: color-mix(in srgb, rgb(240, 134, 197) 70%, red 30%);
 }
+/* Once you click the navigation, the sections become underlined */
+nav a:active {
+    text-decoration: underline;
+}
 
 header h1 {
     color: #008B8B;
+    position: sticky;
+    top: 0;
+    background-color: rgb(246, 230, 246);
+    z-index: 100;
+    border-radius: 6px;
+
 }
 header h2 {
     color: rgb(120, 160, 221);
@@ -56,6 +66,36 @@ section:nth-of-type(3) ol {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 8px;
+
+  /* Margin (longhand) */
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+
+  /* Padding (longhand) */
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+
+  /* Border (longhand style/color/width) */
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-top-color: #ccc;
+  border-right-color: #ccc;
+  border-bottom-color: #ccc;
+  border-left-color: #ccc;
+
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+
+  position: relative;
 }
 /* Colors the word question in blue in the Questions/Comments/Concerns Section */
 .questions .blue {
@@ -67,6 +107,10 @@ section:nth-of-type(5) img {
     width: 25rem;      
     height: 300px;     
     margin-bottom: 2vh;
+
+    max-width: 100%;
+    min-width: 300px;
+
 }
 /* Makes video a certain size */
 section:nth-of-type(5) video {
@@ -87,7 +131,37 @@ strong {
     --main-accent: color(display-p3 0.2 0.7 0.7);
 }
 
+/* Shorthand margin, padding, and border applied to voting form at the bottom */
+form {
+    margin: 1rem auto 2rem auto;
+    padding: 1rem 2rem;
+    border: 3px dashed #999;
+    border-radius: 12px;
+}
+/* New Business Section */
+section:nth-of-type(4) p {
+    color: #33a3cc;
+    text-decoration: underline;
+    text-align: center;
+}
 
-
-
+/* Inline element for the word question in blue in Questions/Comments/Concerns Section */
+span.blue {
+    display: inline;
+    
+}
   
+/* Inline-block element for bottom of voting form */
+  label[for="options-above"] {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    background-color: #9ff3d6;
+    border-radius: 8px;
+}
+
+/* Hidden element using display: none */
+datalist {
+    display: none;
+}
+
