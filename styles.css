@@ -211,4 +211,72 @@ datalist {
       height: auto;
     }
 }
-  
+
+/* highlights the p tag in diagrams/architecture/things presented */
+.highlight {
+  background-color: #ffffcc;
+  border: 1px dashed #ccc;
+  padding: 0.5rem;
+}
+/*makes the first check mark in the voting form blue */
+#logo1 {
+  accent-color: rgb(0, 255, 204);
+}
+* {
+  box-sizing: border-box;
+}
+/* makes voting form outline a teal color */
+fieldset {
+  margin-top: 2rem;
+  border-color: teal;
+}
+/* shifted the checkboxes in voting form to the right a bit */
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+/* makes the names in the attendance list be blue when hovered over */
+li:hover {
+  background-color: rgb(57, 227, 227);
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* spaces out h1 and h2 headers */
+h1, h2 {
+  letter-spacing: 0.03em;
+}
+/* makes every label in my form bold */
+form label {
+  font-weight: bold;
+}
+/* makes the click here for yes part in the voting form be blue */
+fieldset > div {
+  margin-top: 1rem;
+  background-color: #75f0db55;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+/* makes all the labels in the voting form purple */
+input[type="checkbox"] ~ label {
+  color: #990099;
+}
+/* make the click here for yes label italic */
+input[type="radio"] + label {
+  font-style: italic;
+}
+input.blue {
+  border: 2px solid #0077cc;
+}
+/* makes the unfinished business list highlighted blue when hovered */
+form:has(textarea) {
+  border: 3px solid #00b894;
+  box-shadow: 0 0 5px rgba(0, 184, 148, 0.5);
+}
+.questions {
+  border-left: 6px double #f4f4f4;
+}
+.questions h2 {
+  font-family: 'Figtree', sans-serif;
+}
+.questions p {
+  line-height: 1.6;
+}
