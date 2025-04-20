@@ -1,6 +1,7 @@
 /* General Page Style */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Condensed+One&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: Special Gothic Condensed One, sans-serif;
     background-color: hsl(0, 0%, 100%);
     color: #333;
     margin: 0;
@@ -11,6 +12,13 @@ nav a {
     text-decoration: none;
     color: rgb(24, 67, 104); 
     margin-right: 12px;
+
+  /* makes nav bar go to the center */
+  display: flex;
+  justify-content: space-around;     
+  align-items: center;               
+  gap: 1rem;                          
+  flex-wrap: wrap;
 }
 /* Naviagtion Bar text changing color to pink onced hovered over */
 nav a:hover {
@@ -44,6 +52,12 @@ header ul {
     padding: 1.5rem;
     border-left: 4px solid #008B8B;
     border-radius: 8px;
+
+  /* makes attendance list styles spaced out and not in a long list */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+  justify-items: start;
 }
 /* The Brainstorming and Check-Ins Section being highlighted in gray */
 section:nth-of-type(1) p,
@@ -165,3 +179,36 @@ datalist {
     display: none;
 }
 
+/* responsive design with media query */
+@media screen and (max-width: 768px) {
+    body {
+      padding: 0.5rem;
+      font-size: 0.95rem;
+    }
+  
+    header h1 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    form {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    section:nth-of-type(5) img {
+      width: 100%;
+      height: auto;
+    }
+  
+    section:nth-of-type(5) video {
+      width: 100%;
+      height: auto;
+    }
+}
+  
